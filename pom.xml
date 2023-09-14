@@ -144,6 +144,11 @@
 <!--			<version>2.23.0</version>-->
 <!--		</dependency>-->
 
+		<dependency>
+			<groupId>Com.NumpyNinja</groupId>
+			<artifactId>DS-Algo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 
