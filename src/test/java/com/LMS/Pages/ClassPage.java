@@ -190,8 +190,7 @@ public class ClassPage {
 		    for(int i=1;i<rows;i++) {
 		    	if(RowcehckBox.get(i).isDisplayed())
 		    	{
-		    		
-		    		checkvalue=true;
+		    				    		checkvalue=true;
 		    	}
 		    	else
 		    		checkvalue=false;
@@ -404,7 +403,13 @@ public boolean classdatesearch() {
 	return true;
 	
 	}
-                      //RowEdit
+public void clickrowedit() //RowEdit
+{	
+	int i=driver.findElements(By.xpath("//table[@id='table']/tbody/tr")).size();
+	String beforepath="//tab[@id='table']/tbody/tr[";
+	driver.findElement(By.xpath(beforepath+ i + "]/td[5]")).click();
+	
+}
 			
 			}
 		

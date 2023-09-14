@@ -349,14 +349,13 @@ public class ClassSteps {
 
 	@When("Admin clicks Edit button in data table")
 	public void admin_clicks_edit_button_in_data_table() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    CP.clickrowedit();
 	}
 
 	@Then("Edit popup window appears with heading Class Details")
 	public void edit_popup_window_appears_with_heading_class_details() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		String url=DriverFactory.getDriver().getCurrentUrl();
+		Assert.assertEquals("classdetails", url.contains("classdetails"));
 	}
 
 	@When("Admin clicks Edit button from one of the row in data table")
